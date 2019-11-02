@@ -32,6 +32,16 @@ You are required to have the tools present in both sending and receiving hosts, 
 
 -i: input mode, and to specify directory and filename
 
+#### Advance Configurations
+For further tweaking, you may examine the 'pixelcat.py' file and do some tweaking to the various variables below:
+###### Notch Compensation
+COMP_Y: Offset from the top. A value of 32 means the splashed images are shifted 32 pixels downwards.
+###### Bandwidth Compensation
+BANDWIDTH_COMP: Default value is 0. Set positive value to reduce the splashed images. This is useful for situations where bandwidth is very limited. Setting a value of 500 means 500 pixels from bottom will not be used for splashed images. This should assist in reducing latency that could cause synchronization issue. 
+###### Capture Intervals & Splash Period
+CAPTURE_INTERVAL: Default value is 2. This sets the captures between intervals. 
+SPLASH_PERIOD: Default value is 2. This sets how long the splashed images are retained on screen. 
+
 #### Accuracy
 The anti-compression mode is not a lossless mode. The accuracy of the file integrity depends heavily on the bandwidth and compression level. The better the connection, the higher the accuracy. The average accuracy should about around 98% over the Internet at a typical modern bandwidth.
 
