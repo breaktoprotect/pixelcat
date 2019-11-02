@@ -42,11 +42,11 @@ BANDWIDTH_COMP: Default value is 0. Set positive value to reduce the splashed im
 CAPTURE_INTERVAL: Default value is 2. This sets the captures between intervals. 
 SPLASH_PERIOD: Default value is 2. This sets how long the splashed images are retained on screen. 
 
-#### Accuracy
-The anti-compression mode is not a lossless mode. The accuracy of the file integrity depends heavily on the bandwidth and compression level. The better the connection, the higher the accuracy. The average accuracy should about around 98% over the Internet at a typical modern bandwidth.
-
 #### Help
 `python pixelcat.py -h`
+
+## Accuracy
+The anti-compression mode is not a lossless mode. The accuracy of the file integrity depends heavily on the bandwidth and compression level. The better the connection, the higher the accuracy. The average accuracy should about around 98% over the Internet at a typical modern bandwidth.
 
 # Credits
 Special thanks to PentestPartners for the idea and inspiration. This concept was first published by PentestPartners:
