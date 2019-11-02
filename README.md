@@ -13,14 +13,22 @@ Transfer files via screens of GUI remote desktop apps (e.g. RDP, VNC, Citrix, et
 - You need to be able to run full-screen GUI-based remote desktop software (e.g. RDP or Citrix Receiver)
 
 # How to use?
+You are required to have the tools present in both sending and receiving hosts, just as you would with a <b>netcat</b> binary. 
 #### On Host 'Receiver' PC:
-Enter the following command to set pixelcat to listening mode (with anti-compression):
+1. Enter the following command to set pixelcat to listening mode (with anti-compression):
 `python pixelcat.py -l -ac`
+2. Your pixelcat program should be silently taking screenshots and detecting for pixelcat headers on screen.
 
 -l: switch to listening
 -ac: anti-compression mode
+
 #### On Target 'Sender' PC:
+1. Proceed to log in via the chosen remote desktop program to the target PC that contains the file to be exfiltrated. 
+2. Set remote desktop program to full screen mode.
+3. To start the transmission, enter the following command:
 `python pixelcat.py -ac -i <filename.ext>`
+4. Pixelcat should start splashing images to the screen. Allow it to complete.
+5. Return back to the host PC. Examine the pixelcat messages on console and you should observe a new file saved.
 
 -i: input mode, and to specify directory and filename
 
