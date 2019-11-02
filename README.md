@@ -32,6 +32,9 @@ You are required to have the tools present in both sending and receiving hosts, 
 
 -i: input mode, and to specify directory and filename
 
+#### Accuracy
+The anti-compression mode is not a lossless mode. The accuracy of the file integrity depends heavily on the bandwidth and compression level. The better the connection, the higher the accuracy. The average accuracy should about around 98% over the Internet at a typical modern bandwidth.
+
 #### Help
 `python pixelcat.py -h`
 
