@@ -1,5 +1,5 @@
 # Description
-Transfer files via screens of GUI remote desktop apps (e.g. RDP, VNC, Citrix, etc)
+Transfer files via screens of GUI remote desktop apps (e.g. RDP, VNC, Citrix, etc). For more information, please refer to the Bsides Singapore 2019 slide deck in PDF: https://github.com/breaktoprotect/pixelcat/blob/master/PixelHeist%20v1.2_bsides-SG-2019.pdf
 
 # Note
 - This is only a proof-of-concept code. 
